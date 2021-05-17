@@ -6,5 +6,5 @@ uvloop
 httptools
 pydantic
 typing
-transformer
+transformers
 torch

@@ -1,6 +1,6 @@
 {
-    "BERT_MODEL": "bert-large-uncased-whole-word-masking-finetuned-squad",
-    "PRE_TRAINED_MODEL": "bert-large-uncased-whole-word-masking-finetuned-squad",
+    "BERT_MODEL": "mrm8488/bert-small-finetuned-squadv2",
+    "PRE_TRAINED_MODEL": "mrm8488/bert-small-finetuned-squadv2",
     "MAX_SEQUENCE_LEN": 512,
     "CONTEXT":"My name is John. I live in San Jose, California. Rob is friend of john. He lives in Seattle, Washington"
 }

@@ -2,5 +2,5 @@
     "BERT_MODEL": "mrm8488/bert-small-finetuned-squadv2",
     "PRE_TRAINED_MODEL": "mrm8488/bert-small-finetuned-squadv2",
     "MAX_SEQUENCE_LEN": 512,
-    "CONTEXT":"On 14 September 2017, Halimah Yacob became Singapore’s first woman president, and first Malay president since Yusof Ishak. Halimah was elected unopposed under the first reserved presidential election, which was reserved for the Malay community"
+    "CONTEXT":"On 14 September 2017, Halimah Yacob became Singapore first woman president, and first Malay president since Yusof Ishak. Halimah was elected unopposed under the first reserved presidential election, which was reserved for the Malay community."
 }

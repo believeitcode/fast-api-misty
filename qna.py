@@ -7,11 +7,22 @@ import torch
 import numpy as np
 import json 
 
+## Commented Area are downloading model from Hugging Face only applied on first use only
+## check out for more info : https://huggingface.co/mrm8488/bert-tiny-finetuned-squadv2 
 with open("config.json") as json_file:
-    config = json.load(json_file)
+   config = json.load(json_file)
 
-model = BertForQuestionAnswering.from_pretrained(config["BERT_MODEL"])
-tokenizer_for_bert = BertTokenizer.from_pretrained(config["PRE_TRAINED_MODEL"])
+PATH = "./bert-tiny-finetuned-squadv2" 
+
+# model = BertForQuestionAnswering.from_pretrained(config["BERT_MODEL"])
+# tokenizer_for_bert = BertTokenizer.from_pretrained(config["BERT_MODEL"])
+
+# tokenizer_for_bert.save_pretrained(PATH)
+# model.save_pretrained(PATH)
+
+
+model = BertForQuestionAnswering.from_pretrained(PATH)
+tokenizer_for_bert = BertTokenizer.from_pretrained(PATH)
 
 def bert_answering_machine ( question, passage, max_len =  512):
     ''' Function to provide answer from passage for question asked.

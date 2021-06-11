@@ -12,17 +12,17 @@ import json
 with open("config.json") as json_file:
    config = json.load(json_file)
 
-PATH = "bert-tiny-finetuned-squadv2" 
+#PATH = "bert-tiny-finetuned-squadv2" 
 
-# model = BertForQuestionAnswering.from_pretrained(config["BERT_MODEL"])
-# tokenizer_for_bert = BertTokenizer.from_pretrained(config["BERT_MODEL"])
+model = BertForQuestionAnswering.from_pretrained(config["BERT_MODEL"])
+tokenizer_for_bert = BertTokenizer.from_pretrained(config["BERT_MODEL"])
 
 # tokenizer_for_bert.save_pretrained(PATH)
 # model.save_pretrained(PATH)
 
 
-model = BertForQuestionAnswering.from_pretrained(PATH)
-tokenizer_for_bert = BertTokenizer.from_pretrained(PATH)
+#model = BertForQuestionAnswering.from_pretrained(PATH)
+#tokenizer_for_bert = BertTokenizer.from_pretrained(PATH)
 
 def bert_answering_machine ( question, passage, max_len =  512):
     ''' Function to provide answer from passage for question asked.

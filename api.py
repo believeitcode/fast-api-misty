@@ -20,6 +20,7 @@ class QuestionReponse(BaseModel):
 
 # Using virtualenv: virtualenv <env> , To activate virutalenv: <env>\Scripts\activate
 # start server to run instant of FastAPI by 'uvicorn api:app --reload' (api - script file ,app - var instant of FastAPI)  
+# ref: https://www.tutlinks.com/create-and-deploy-fastapi-app-to-heroku/ 
 app = FastAPI()
 
 with open("config.json") as json_file:

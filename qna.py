@@ -12,7 +12,7 @@ import json
 with open("config.json") as json_file:
    config = json.load(json_file)
 
-PATH = "./bert-tiny-finetuned-squadv2" 
+PATH = "bert-tiny-finetuned-squadv2" 
 
 # model = BertForQuestionAnswering.from_pretrained(config["BERT_MODEL"])
 # tokenizer_for_bert = BertTokenizer.from_pretrained(config["BERT_MODEL"])
